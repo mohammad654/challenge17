@@ -1,0 +1,263 @@
+
+
+* {
+    box-sizing: border-box;
+}
+body{margin: 0;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    background: #36393E;
+    /*  border: solid 3px red;*/
+}
+li{
+    display: block;
+    border: solid 1px rgb(65, 69, 64);
+    padding: 15px;
+    margin: 0;
+    font-family: Tahoma;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Tahoma;
+}
+ul li#green{
+    background: green;
+    font-family: Tahoma;
+}
+
+section{
+    font-family: Tahoma;
+    color: white;
+    background:#36393E;
+    width: 50%;
+    margin-left: 120px;
+    border-radius: 10px;
+}
+section div#chal1{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    margin-top:-7px;
+}
+section div#chal2{
+    text-align: center;
+    padding-bottom:15px;
+    font-family: Tahoma;
+}
+div#text1{
+    background: rgb(255, 262, 244);
+    border: solid 1px rgb(240, 275, 274); ;
+    margin: 20px;
+}
+hr{
+    width: 70px;
+    margin-left: 121px;
+    border:  solid 2px lawngreen ;
+}
+p#par1{
+    font-size: 30px;
+    margin-left: 120px;
+    font-family: Tahoma;
+}
+p#par2{
+
+    font-size: 15px;
+    margin-left: 120px;
+    font-family: Tahoma;
+}
+
+p#par3{
+    padding: 20px;
+    font-size: 20px;
+    font-family: Tahoma;
+
+}
+
+
+
+div#text2{
+    background: rgb(255, 262, 244);
+    border: solid 1px rgb(240, 275, 274); ;
+    margin: 20px;
+    font-family: Tahoma;
+
+}
+
+p#par4{
+    font-size: 30px;
+    margin-left: 120px;
+    font-family: Tahoma;
+
+}
+p#par5{
+
+    font-size: 15px;
+    margin-left: 120px;
+    font-family: Tahoma;
+}
+
+p#par6{
+    padding: 20px;
+    font-size: 20px;
+    font-family: Tahoma;
+}
+
+
+
+div#text3{
+    background: rgb(255, 262, 244);
+    border: solid 1px rgb(240, 275, 274); ;
+    margin: 20px;
+    font-family: Tahoma;
+
+}
+
+p#par7{
+    font-size: 30px;
+    margin-left: 120px;
+    font-family: Tahoma;
+}
+p#par8{
+
+    font-size: 15px;
+    margin-left: 120px;
+    font-family: Tahoma;
+}
+
+p#par9{
+    padding: 20px;
+    font-size: 20px;
+    font-family: Tahoma;
+}
+
+
+div#text4{
+    background: rgb(255, 262, 244);
+    border: solid 1px rgb(240, 275, 274); ;
+    margin: 20px;
+    font-family: Tahoma;
+
+}
+
+p#par10{
+    font-size: 30px;
+    margin-left: 120px;
+
+}
+p#par11{
+
+    font-size: 15px;
+    margin-left: 120px;
+    font-family: Tahoma;
+}
+
+p#par12{
+    padding: 20px;
+    font-size: 20px;
+    font-family: Tahoma;
+}
+fieldset{
+    background:white;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+li#for a{color: black;
+    font-family: Tahoma;
+
+}
+form{margin-bottom: 20px}
+li#for{background: bisque;border: solid 1px snow }
+fieldset{
+    background:inherit;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Tahoma;
+}
+legend{
+    margin-bottom: -8px;
+    text-align: center;
+}
+
+/*--------Css For Mobile-----*/
+
+@media screen and ( max-width: 375px)  {
+
+  body{width: 100%}
+
+    section div#chal1{
+        font-size: 28px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top:-7px;
+    }
+    section div#chal2{
+         font-size: 50%;
+    }
+    section{
+        width: 50%;
+        margin-left: 100px;
+        border-radius: 8px;
+    }
+    p#par1{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    p#par2{
+        font-size: 12px;
+        margin-left: 25px;
+    }
+    hr{
+        width: 30px;
+        margin-left: 25px;
+    }
+    p#par3{
+        font-size: 10px;
+    }
+    p#par4{
+        font-size: 20px;
+        margin-left: 20px;
+
+    }
+    p#par5{
+        font-size: 12px;
+        margin-left: 25px;
+    }
+
+    p#par6{
+        font-size: 10px;
+    }
+    p#par7{
+        font-size: 20px;
+        margin-left: 20px;
+
+    }
+    p#par8{
+        font-size: 12px;
+        margin-left: 25px;
+    }
+
+    p#par9{
+        font-size: 10px;
+    }
+    p#par10{
+        font-size: 20px;
+        margin-left: 20px;
+
+    }
+    p#par11{
+        font-size: 12px;
+        margin-left: 25px;
+    }
+
+    p#par12{
+        font-size: 10px;
+    }
+a{font-size: 10px}
+    fieldset{border: none}
+}
