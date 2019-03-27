@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>>opdracht4</title>
+</head>
+
+
+<body>
+<div id="view">
+    <table id="table">
+        <tr>
+            <th>Kenteken</th>
+            <th>Merk</th>
+            <th>Type</th>
+            <th>DatumAPK</th>
+            <th>Kilometerstand</th>
+        </tr>
+    </table>
+</div>
+<button onclick="show()">submitt</button>
+<script>
+    let autos = [
+        ['DT-LT-87', 'Citroen', 'XM', '1999-09-23', '34500'],
+        ['GF-NX-07', 'Volkswagen', 'Polo', '1999-07-12', '78000'],
+        ['GF-PD-34', 'Volkswagen', 'Polo', '1999-07-22', '57500'],
+        ['KR-RT-65', 'Volkswagen', 'Golf', '1999-08-08', '42000'],
+        ['PT-ER-45', 'Ford', 'Fiesta', '1999-03-02', '25000'],
+        ['TT-PR-73', 'Citroen', 'XM', 'NULL', '1200'],
+        ['TT-RW-01', 'Volkswagen', 'Polo', '1999-11-14', '4500'],
+    ];
+    function show() {
+        let view = document.getElementById('table');
+        autos.forEach(function (element) {
+            console.log(element);
+            view.innerHTML +=
+                `<tr>
+                        <td>${element[0]}</td>
+                        <td>${element[1]}</td>
+                        <td>${element[2]}</td>
+                        <td>${element[3]}</td><td>${element[4]}
+                        </td>
+                    </tr>`;
+        });
+
+    }
+</script>
+</body>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht7</title>
+</head>
+<style>
+    @media screen and ( max-width: 1200px) {
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Tahoma;
+        }
+
+        #myLinks {
+            background: royalblue;
+            padding-bottom: 20px;
+            padding-top: 40px;
+
+        }
+
+        a {
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            padding-left: 170px;
+            text-decoration: none;
+        }
+
+        h1 {
+
+            margin-left: 20px;
+            color: #333333;
+            margin-bottom: auto;
+
+        }
+
+        hr {
+            background: royalblue;
+            width: 100%;
+            height: 100px;
+            margin-top: 250px;
+        }
+
+        div img {
+
+            width: 250px;
+            height: 150px;
+            padding-left: 90px;
+            padding-top: 50px;
+        }
+
+        #pics {
+            margin-left: 40px;
+            display: block;
+        }
+
+        #img1,#img2,#img3 {
+            margin-left: 50px;
+        }
+
+        #img4,#img5,#img6 {
+            margin-left: 50px;
+        }
+        p{
+            display: none;
+        }
+    }
+</style>
+<body>
+<p>Ik gebruik @media bij 1200</p>
+<div id="myLinks">
+    <a href="#news" id="home">Op plaatsnaam</a>
+    <a href="#news">Op aantaal</a>
+    <a href="#contact"> Op prijs</a>
+</div>
+<h1>KApsalon</h1>
+<p></p>
+<div id="pics">
+    <img id="img1" src="../challenge26-27/img2/A1.jpg">
+    <img id="img2" src="../challenge26-27/img2/A2.jpg">
+    <img id="img3" src="../challenge26-27/img2/A3.jpg">
+    <img  id="img4" src="../challenge26-27/img2/A4.jpg">
+    <img id="img5" src="../challenge26-27/img2/A5.jpg">
+    <img  id="img6" src="../challenge26-27/img2/A6.jpg">
+</div>
+<hr>
+<script>
+   setInterval( function (){
+      var   myIlemt1 = document.getElementById("img1");
+            myIlemt2 = document.getElementById("img2");
+            myIlemt3 = document.getElementById("img3");
+            myIlemt4 = document.getElementById("img4");
+            myIlemt5 = document.getElementById("img5");
+            myIlemt6 = document.getElementById("img6");
+          var myImg=[
+              "../challenge26-27/img2/A1.jpg",
+              "../challenge26-27/img2/A2.jpg",
+              "../challenge26-27/img2/A3.jpg",
+              "../challenge26-27/img2/A4.jpg",
+              "../challenge26-27/img2/A5.jpg",
+              "../challenge26-27/img2/A6.jpg"
+          ];
+          var myRandom=Math.floor(Math.random()*myImg.length);
+
+            myIlemt1.src=myImg[myRandom];
+       console.log(myRandom);
+
+          },500);
+
+
+
+
+</script>
+</body>
+</html>

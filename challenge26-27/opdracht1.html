@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keuzeopdracht 1</title>
+    <style>
+        *{
+           margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #myInput{
+            width: 20%;
+            font-family:Tahomal;
+            margin-left:10px ;
+            margin-top: 20px;
+            border-radius: 7px;
+        }
+        #mySummit{
+            margin-left: 10px;
+            margin-top:20px ;
+            width: 10%;
+            border-radius: 7px;
+      }
+        #mySummit:active{
+            font-size: 15px;
+           width:15% ;
+            border:none;
+        }
+        p{
+            margin-left: 200px;
+            margin-top: 20px;
+            color: chartreuse;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body id="myBody"  >
+<p id="myP"></p>
+<p id="myP2"></p>
+<form  action=""   method="get">
+    <input type="text" value=""  id="myInput"  >
+    <input type="button" value="Verstuur" id="mySummit" onclick="myFunction()" >
+</form>
+<script>
+    document.getElementById("myP").innerHTML='JavaScript';
+
+    function myFunction() {
+        var myValue=  document.getElementById("myInput").value;
+        var x = document.getElementById("myBody");
+      if (myValue==='red') {
+
+        x.style.backgroundColor ="red";
+
+      }else if (myValue==='blauw') {
+
+            x.style.backgroundColor = "#000099";
+
+        }
+        else if (myValue==='geel') {
+
+            x.style.backgroundColor = "#ffff00";
+
+        }
+        else if (myValue==='groen') {
+
+            x.style.backgroundColor = "#006600";
+
+        }
+       else if (myValue==='black') {
+
+            x.style.backgroundColor = "#000000";
+
+        }
+        else if (myValue==='oranje') {
+
+            x.style.backgroundColor = "#ff9933";
+
+        }
+      else if (myValue==='wit') {
+
+          x.style.backgroundColor = "#ffffff";
+
+      }
+        else{
+            x.style.backgroundColor = "#ffffff";
+      }
+            }
+
+
+</script>
+
+</body>
+</html>

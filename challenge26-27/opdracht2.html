@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>opdracht2</title>
+</head>
+<style>
+    div{
+        border-radius: 7px;
+    }
+    select{
+       width: 50%;
+        margin-left:20% ;
+        font-size: 30px;
+        color: black;
+        border-radius: 7px;
+        margin-top: 2%;
+    }
+    #myImg{
+        margin-left: 26%;
+        margin-top: 50px;
+    }
+    #myImg2{
+        margin-left: 34%;
+        margin-top: 40px;
+    }
+    p{
+        margin-left: 40%;
+        font-size: 40px;
+        color: royalblue;
+    }
+
+</style>
+<body>
+
+<select  id="mySecect" onchange="change()">
+    <option id="myOption" value="open"  >We hebben... </option>
+    <option id="myOption" value="Auto1" >Marcedes</option>
+    <option id="myOption" value="Auto2" >Audi</option>
+    <option id="myOption" value="Auto3" >Ford</option>
+    <option id="myOption" value="Auto4">Opel</option>
+</select>
+
+<div id="myImg" onclick="myFunction()">
+    <img src="auto1.jpg" alt="Auto1" height="160" width="160">
+    <img src="auto2.jpg" alt="Auto2" height="160" width="160">
+    <img src="auto3.jpg" alt="Auto3" height="160" width="160">
+    <img src="auto4.jpg" alt="Auto4" height="160" width="160">
+</div>
+
+<p id="myP"> </p>
+
+<img id="myImg2" src="" alt=" " height="360" width="360">
+<script>
+    var   x =  document.getElementById('myP');
+          myImgs  =  document.getElementById('myImg2');
+
+    function myFunction() {
+       x.innerHTML='Function 1';
+       myImgs.src="p.jpg.jpg";
+    }
+
+    function change() {
+        myValue=  document.getElementById("mySecect").value;
+if (myValue==='Auto1'){
+    x.innerHTML='Marcedes ';
+myImgs.src="auto1.jpg";
+    }
+    else if(myValue==='Auto2') {
+    x.innerHTML='Audi';
+        myImgs.src="auto2.jpg";
+    }
+else if(myValue==='Auto3') {
+    x.innerHTML='Ford';
+    myImgs.src="auto3.jpg";
+}
+else if(myValue==='Auto4') {
+    x.innerHTML='Opel';
+    myImgs.src="auto4.jpg";
+}
+    else{
+    x.innerHTML='Je moet iets kezen';
+    myImgs.src="p.jpg.jpg";
+    }
+    }
+
+</script>
+</body>
+</html>
