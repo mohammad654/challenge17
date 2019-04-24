@@ -13,6 +13,12 @@ h1{
     text-align: center;
     color: orange;
 }
+hr{
+    width: 100%;
+    margin: 0;
+    height: 20px;
+    background: aqua;
+}
 #bar1{
     text-align: center;
     color: orange;
@@ -156,8 +162,12 @@ hr{
         margin-top:-18px;
     }
     hr{
-        width: 25%;
-        margin-left: 10px;
+        width: 100%;
+        height: 30px;
+        background: hotpink;
+    }
+    #hr{
+        height: 20px;
     }
     a button{
         font-size: 10px;
@@ -166,12 +176,26 @@ hr{
     #div2{
         width: 100%;
         background: none;
+
     }
     #end{
 
         width: 100%;
         float: none;
-        background: aliceblue;
+        background: silver;
 
+    }
+    #last{
+        text-align: center;
+        font-size: 30px;
+        font-family: "Arial Nova";
+        padding-top: 10px;
+        color: darkslategray;
+
+    }
+    #myhr{
+        width: 100%;
+        height: 2px;
+        background: white;
     }
     }
